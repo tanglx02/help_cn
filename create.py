@@ -63,7 +63,7 @@ def main():
     print("=" * 50)
     
     # 保存到指定路径
-    save_path = "/Users/tanglx/Tools/help_CN/tools"
+    save_path = "./tools"
     
     # 确保目录存在
     os.makedirs(save_path, exist_ok=True)
