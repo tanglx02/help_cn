@@ -1,0 +1,5 @@
+{
+    "category": "信息收集工具",
+    "description": "JavaScript 文件敏感信息提取",
+  "help_text": "用法: JSFinder.py [-h] [-u URL] [-c COOKIE] [-f FILE] [-ou OUTPUTURL]\n                  [-os OUTPUTSUBDOMAIN] [-j] [-d]\n\n选项:\n  -h, --help            显示此帮助信息并退出\n  -u, --url URL         指定目标网站\n  -c, --cookie COOKIE   指定目标网站的 Cookie\n  -f, --file FILE       指定包含 URL 或 JS 文件路径的文件\n  -ou, --outputurl OUTPUTURL\n                        指定 URL 输出文件名\n  -os, --outputsubdomain OUTPUTSUBDOMAIN\n                        指定子域名输出文件名\n  -j, --js              在 JS 文件中查找信息\n  -d, --deep            深度查找模式"
+}

@@ -1,0 +1,6 @@
+{
+    "category": "信息收集工具",
+    "description": "DNS 枚举工具,收集记录",
+  "help_text": "用法: dnsenum.pl [选项] <域名>\n[选项]:\n注意: 暴力破解选项 -f 是必须的。\n\n通用选项:\n  --dnsserver <服务器>\n\t\t\t使用此DNS服务器进行A、NS和MX查询。\n  --enum\t\t快捷选项，等同于 --threads 5 -s 15 -w。\n  -h, --help\t\t打印此帮助信息。\n  --noreverse\t\t跳过反向查找操作。\n  --nocolor\t\t禁用ANSI颜色输出。\n  --private\t\t在文件domain_ips.txt末尾显示并保存私有IP。\n  --subfile <文件>\t将所有有效子域名写入此文件。\n  -t, --timeout <值>\tTCP和UDP超时值（秒）(默认: 10秒)。\n  --threads <值>\t\t执行不同查询的线程数。\n  -v, --verbose\t\t详细模式: 显示所有进度和错误消息。\n\nGoogle搜索选项:\n  -p, --pages <值>\t在搜索名称时处理的Google搜索页数，\n\t\t\t默认值为5页，必须指定-s选项。\n  -s, --scrap <值>\t从Google搜索中获取的最大子域名数量(默认15)。\n\n暴力破解选项:\n  -f, --file <文件>\t从此文件读取子域名以执行暴力破解。\n  -u, --update <a|g|r|z>\n\t\t\t使用有效子域名更新-f选项指定的文件。\n\ta (all)\t\t使用所有结果更新。\n\tg\t\t仅使用Google搜索结果更新。\n\tr\t\t仅使用反向查找结果更新。\n\tz\t\t仅使用区域传输结果更新。\n  -r, --recursion\t对子域名进行递归，对所有发现的具有NS记录的子域名进行暴力破解。\n\nWHOIS网络范围选项:\n  -d, --delay <值>\tWHOIS查询之间等待的最大秒数，值是随机定义的，默认: 3秒。\n  -w, --whois\t\t对C类网络范围执行WHOIS查询。\n\t\t\t **警告**: 这可能会生成非常大的网络范围，执行反向查找将需要大量时间。\n\n反向查找选项:\n  -e, --exclude <正则表达式>\n\t\t\t从反向查找结果中排除与正则表达式匹配的PTR记录，适用于无效主机名。\n\n输出选项:\n  -o --output <文件>\t以XML格式输出。可导入MagicTree (www.gremwell.com)"
+
+}

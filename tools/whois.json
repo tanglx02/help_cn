@@ -1,0 +1,5 @@
+{
+    "category": "信息收集工具",
+    "description": "查询域名信息",
+  "help_text": "# 查询域名信息\nwhois example.com\n\n# 查询 IP 地址信息\nwhois 8.8.8.8\n\n# 指定 whois 服务器进行查询\nwhois -h whois.verisign-grs.com example.com\n\n# 查询更详细的信息\nwhois -v example.com"
+}

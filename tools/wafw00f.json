@@ -1,0 +1,6 @@
+{
+    "category": "信息收集工具",
+    "description": "WAF识别工具",
+  "help_text": "用法：wafw00f url1 [url2 [url3 ... ]]\nexample: wafw00f http://www.victim.org/\n\nOptions:\n  -h, --help            显示此帮助信息并退出\n  -v, --verbose         启用详细输出模式，多个-v参数可增加详细程度\n  -a, --findall         检测所有匹配特征的WAF，而非在找到首个匹配时停止测试\n  -r, --noredirect      不跟随3xx重定向响应\n  -t TEST, --test=TEST  仅测试特定类型的WAF\n  -o OUTPUT, --output=OUTPUT\n                        根据文件扩展名写入CSV、JSON或文本格式的输出\n                        若需输出到标准输出，请使用\"-\"作为文件名\n  -f FORMAT, --format=FORMAT\n                        强制指定输出格式（csv/json/text）\n  -i INPUT, --input-file=INPUT\n                        从文件读取目标URL列表\n                        支持CSV、JSON或文本格式\n                        CSV/JSON格式需包含\"url\"字段\n  -l, --list            列出WAFW00F能够检测的所有WAF类型\n  -p PROXY, --proxy=PROXY\n                        通过HTTP代理发送请求\n                        示例：http://hostname:8080, socks5://hostname:1080\n                        或带认证的http://user:pass@hostname:8080\n  -V, --version         显示当前WAFW00F版本并退出\n  -H HEADERS, --headers=HEADERS\n                        通过文本文件传递自定义HTTP头，覆盖默认头设置\n  -T TIMEOUT, --timeout=TIMEOUT\n                        设置请求超时时间（秒）\n  --no-colors           禁用输出中的ANSI颜色"
+
+}
