@@ -37,7 +37,7 @@ def main():
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument('tool', type=str, nargs='?', help='工具名称')
     group.add_argument('-list', action='store_true', help='列出所有支持的工具')
-    parser.add_argument('-tools-dir', type=str, default='/Users/tanglx/Tools/help_CN/tools', 
+    parser.add_argument('-tools-dir', type=str, default='./tools', 
                         help='工具配置文件目录 (默认: ./tools)')
     args = parser.parse_args()
 
